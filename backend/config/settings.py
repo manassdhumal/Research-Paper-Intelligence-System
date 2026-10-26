@@ -86,7 +86,7 @@ class Settings:
 
     # --- LLM ------------------------------------------------------------------
     gemini_api_key: str = field(default="", repr=False)
-    gemini_model: str = "gemini-3.1-flash-lite"
+    gemini_model: str = "gemini-3.5-flash"
     gemini_timeout_seconds: float = 30.0
     gemini_qa_max_tokens: int = 512
     llm_base_url: str = ""

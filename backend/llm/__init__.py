@@ -15,6 +15,7 @@ def get_chat_llm(default_provider: Optional[LLMProvider] = None) -> LLMProvider:
         llm_base_url=_GEMINI_BASE_URL,
         llm_api_key=settings.gemini_api_key,
         llm_model=settings.gemini_model,
+        llm_timeout_seconds=settings.gemini_timeout_seconds,
     )
     return LLMProvider(chat_settings)
 
